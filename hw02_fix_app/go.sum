@@ -1,2 +1,4 @@
+github.com/AndrewSorokin540/otus-go v0.0.0-20240417200555-deac1c039bd8 h1:3XXPHqaxyXQ+v+DOOaKJRlwAjbO8iPP3LxUT4GpjQdU=
+github.com/AndrewSorokin540/otus-go v0.0.0-20240417200555-deac1c039bd8/go.mod h1:JrwFZbxrdDmemUVTV7Y8XfZclhx4A7T3ZQ3jOPo6Iec=
 golang.org/x/example v0.0.0-20230714141244-83a29069fa80 h1:dIO+42L/3wms+HG8CICCnwjAoQ9K7FD3JodZPpG5ymY=
 golang.org/x/example v0.0.0-20230714141244-83a29069fa80/go.mod h1:DJ5Pz7jIW3ezl8PmYmOf5B1CZ98NJv/GaEcafLB3Lzk=
