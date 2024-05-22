@@ -4,7 +4,7 @@ import "encoding/json"
 import "fmt"
 import "io"
 import "os"
-import "../types"
+import "github.com/AndrewSorokin540/home_work_basic/hw02_fix_app/types"
 
 func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
 	f, err := os.Open(filePath)
@@ -15,7 +15,7 @@ func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
 	bytes, err := io.ReadAll(f)
 	if err != nil {
 		fmt.Printf("Error: %v", err)
-		return nil, nil
+		return nil, err
 	}
 
 	var data []types.Employee
@@ -24,5 +24,5 @@ func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
 
 	res := data
 
-	return res, nil
+	return res, err
 }
