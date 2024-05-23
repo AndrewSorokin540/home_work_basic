@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/AndrewSorokin540/home_work_basic/hw02_fix_app/printer"
 	"github.com/AndrewSorokin540/home_work_basic/hw02_fix_app/reader"
 	"github.com/AndrewSorokin540/home_work_basic/hw02_fix_app/types"
 )
 
 func main() {
-	var path string = "data.json"
+	var path = "data.json"
 
 	fmt.Printf("Enter data file path: ")
 
@@ -31,7 +32,6 @@ func main() {
 	fmt.Print(err)
 
 	printer.PrintStaff(staff)
-
 }
 
 // test 1
