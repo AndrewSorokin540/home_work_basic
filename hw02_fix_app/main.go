@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	var path = "data.json"
+	path := "data.json"
 
 	fmt.Printf("Enter data file path: ")
 
@@ -33,5 +33,3 @@ func main() {
 
 	printer.PrintStaff(staff)
 }
-
-// test 1
