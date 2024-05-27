@@ -1,31 +1,24 @@
-package chessBoardDrawer
+package chessboarddrawer
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func DrawChessBoard(size int) {
-	var boardString string
+	var boardString strings.Builder
 
 	for i := 1; i <= size; i++ {
-		if i%2 == 0 {
-			for j := 1; j <= size; j++ {
-				if j%2 == 0 {
-					boardString = boardString + string('#')
-				} else {
-					boardString = boardString + string('_')
-				}
-			}
-		} else {
-			for j := 1; j <= size; j++ {
-				if j%2 == 0 {
-					boardString = boardString + string('_')
-				} else {
-					boardString = boardString + string('#')
-				}
+		for j := 1; j <= size; j++ {
+			switch {
+			case i%2 == 0 && j%2 == 0, i%2 != 0 && j%2 != 0:
+				boardString.WriteString("#")
+			case i%2 == 0 && j%2 != 0, i%2 != 0 && j%2 == 0:
+				boardString.WriteString(" ")
 			}
 		}
-
-		boardString = boardString + string('\n')
+		boardString.WriteString("\n")
 	}
 
-	fmt.Printf(boardString)
+	fmt.Print(boardString.String())
 }

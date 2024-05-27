@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/AndrewSorokin540/home_work_basic/hw03_chessboard/drawer"
 )
 
@@ -15,5 +16,5 @@ func main() {
 		return
 	}
 
-	chessBoardDrawer.DrawChessBoard(size)
+	chessboarddrawer.DrawChessBoard(size)
 }
